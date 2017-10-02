@@ -1,0 +1,8 @@
+prefix=/home/okrengel/catkin_ws/install
+
+Name: counter_node
+Description: Description of counter_node
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/okrengel/catkin_ws/install/lib 
+Requires: 
