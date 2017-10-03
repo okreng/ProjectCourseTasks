@@ -14,15 +14,20 @@ void talkToMe(const message_ui::sent_msg msg)
     chatbot_node::reply_msg yoohoo;
 
     if (msg.message.compare("Hello") == 0) {
-        yoohoo.message = "Hello, ";
+        string name;
+        ros::param::get("name",name);
+        yoohoo.message = "Hello, " + name;
+        chatpub.publish(yoohoo);
 
     } else if (msg.message.compare("What is your name?") == 0) {
         yoohoo.message = "My name is MRSD Siri";
+        chatpub.publish(yoohoo);
     } else if (msg.message.compare("How are you?") == 0) {
         yoohoo.message = "I am fine, thank you.";
-    } else {
-        yoohoo.message = "I'm sorry, please say something you can understand.";
-    }
+        chatpub.publish(yoohoo);
+    } //else {
+        //yoohoo.message = "I'm sorry, please say something I can understand.";
+    //}
 
     //{
     //    yoohoo.message = "yoohoo";
@@ -32,7 +37,7 @@ void talkToMe(const message_ui::sent_msg msg)
     //cout<<"yoohoo\n";
     //yoohoo.message = "yoohoo";
 
-    chatpub.publish(yoohoo);
+
 
 
 }
@@ -51,7 +56,7 @@ int main(int argc, char **argv) {
   ros::Rate loop_rate(20);
 
 
-  int counter = 0;
+  //int counter = 0;
   while(ros::ok()) {
     //chatbot_node/reply_msg::String msg;
     //string<<"hello world " << counter;

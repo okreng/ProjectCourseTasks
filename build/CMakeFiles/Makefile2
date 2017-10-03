@@ -230,7 +230,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  7
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  11
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -261,7 +261,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  12
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -354,14 +354,14 @@ clean: chatbot_node/CMakeFiles/_chatbot_node_generate_messages_check_deps_reply_
 
 # All Build rule for target.
 chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/roscpp_generate_messages_py.dir/all
+chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
 chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
+chatbot_node/CMakeFiles/chatbot_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 chatbot_node/CMakeFiles/chatbot_node.dir/all: message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/all
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node.dir/build.make chatbot_node/CMakeFiles/chatbot_node.dir/depend
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node.dir/build.make chatbot_node/CMakeFiles/chatbot_node.dir/build
@@ -428,9 +428,9 @@ clean: chatbot_node/CMakeFiles/chatbot_node_gencpp.dir/clean
 # Target rules for target chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir
 
 # All Build rule for target.
-chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/all: chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/all
-chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/all: chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/all
 chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/all: chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/all
+chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/all: chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/all
+chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/all: chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/all
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/depend
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles 
@@ -465,8 +465,8 @@ clean: chatbot_node/CMakeFiles/chatbot_node_generate_messages.dir/clean
 # Target rules for target chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir
 
 # All Build rule for target.
-chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/all: chatbot_node/CMakeFiles/_chatbot_node_generate_messages_check_deps_reply_msg.dir/all
+chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/depend
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  2
@@ -497,8 +497,8 @@ clean: chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/clean
 # Target rules for target chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir
 
 # All Build rule for target.
-chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/all: chatbot_node/CMakeFiles/_chatbot_node_generate_messages_check_deps_reply_msg.dir/all
+chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/depend
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  3
@@ -529,8 +529,8 @@ clean: chatbot_node/CMakeFiles/chatbot_node_generate_messages_lisp.dir/clean
 # Target rules for target chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir
 
 # All Build rule for target.
-chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
 chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/all: chatbot_node/CMakeFiles/_chatbot_node_generate_messages_check_deps_reply_msg.dir/all
+chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/depend
 	$(MAKE) -f chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/build.make chatbot_node/CMakeFiles/chatbot_node_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  4 5
@@ -903,10 +903,19 @@ clean: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 # Convenience name for "all" pass in the directory.
 counter_node/all: counter_node/CMakeFiles/counter_node.dir/all
+counter_node/all: counter_node/CMakeFiles/counter_node_generate_messages.dir/all
 .PHONY : counter_node/all
 
 # Convenience name for "clean" pass in the directory.
+counter_node/clean: counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/clean
 counter_node/clean: counter_node/CMakeFiles/counter_node.dir/clean
+counter_node/clean: counter_node/CMakeFiles/counter_node_gencpp.dir/clean
+counter_node/clean: counter_node/CMakeFiles/counter_node_generate_messages.dir/clean
+counter_node/clean: counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/clean
+counter_node/clean: counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/clean
+counter_node/clean: counter_node/CMakeFiles/counter_node_generate_messages_py.dir/clean
+counter_node/clean: counter_node/CMakeFiles/counter_node_genlisp.dir/clean
+counter_node/clean: counter_node/CMakeFiles/counter_node_genpy.dir/clean
 .PHONY : counter_node/clean
 
 # Convenience name for "preinstall" pass in the directory.
@@ -914,19 +923,50 @@ counter_node/preinstall:
 .PHONY : counter_node/preinstall
 
 #=============================================================================
+# Target rules for target counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/all:
+	$(MAKE) -f counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/build.make counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/build.make counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles 
+	@echo "Built target _counter_node_generate_messages_check_deps_counter"
+.PHONY : counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/rule
+
+# Convenience name for target.
+_counter_node_generate_messages_check_deps_counter: counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/rule
+.PHONY : _counter_node_generate_messages_check_deps_counter
+
+# clean rule for target.
+counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/build.make counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/clean
+.PHONY : counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target counter_node/CMakeFiles/counter_node.dir
 
 # All Build rule for target.
-counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/all
 counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/chatbot_node_generate_messages_cpp.dir/all
 counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/roscpp_generate_messages_py.dir/all
+counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
 counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
+counter_node/CMakeFiles/counter_node.dir/all: chatbot_node/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 counter_node/CMakeFiles/counter_node.dir/all: message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/all
 	$(MAKE) -f counter_node/CMakeFiles/counter_node.dir/build.make counter_node/CMakeFiles/counter_node.dir/depend
 	$(MAKE) -f counter_node/CMakeFiles/counter_node.dir/build.make counter_node/CMakeFiles/counter_node.dir/build
@@ -956,6 +996,232 @@ counter_node/CMakeFiles/counter_node.dir/clean:
 
 # clean rule for target.
 clean: counter_node/CMakeFiles/counter_node.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target counter_node/CMakeFiles/counter_node_gencpp.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/counter_node_gencpp.dir/all: counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/all
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_gencpp.dir/build.make counter_node/CMakeFiles/counter_node_gencpp.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_gencpp.dir/build.make counter_node/CMakeFiles/counter_node_gencpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles 
+	@echo "Built target counter_node_gencpp"
+.PHONY : counter_node/CMakeFiles/counter_node_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/counter_node_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/counter_node_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/counter_node_gencpp.dir/rule
+
+# Convenience name for target.
+counter_node_gencpp: counter_node/CMakeFiles/counter_node_gencpp.dir/rule
+.PHONY : counter_node_gencpp
+
+# clean rule for target.
+counter_node/CMakeFiles/counter_node_gencpp.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_gencpp.dir/build.make counter_node/CMakeFiles/counter_node_gencpp.dir/clean
+.PHONY : counter_node/CMakeFiles/counter_node_gencpp.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/counter_node_gencpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target counter_node/CMakeFiles/counter_node_generate_messages.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages.dir/all: counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/all
+counter_node/CMakeFiles/counter_node_generate_messages.dir/all: counter_node/CMakeFiles/counter_node_generate_messages_py.dir/all
+counter_node/CMakeFiles/counter_node_generate_messages.dir/all: counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/all
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles 
+	@echo "Built target counter_node_generate_messages"
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages.dir/all
+
+# Include target in all.
+all: counter_node/CMakeFiles/counter_node_generate_messages.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/counter_node_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/counter_node_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages.dir/rule
+
+# Convenience name for target.
+counter_node_generate_messages: counter_node/CMakeFiles/counter_node_generate_messages.dir/rule
+.PHONY : counter_node_generate_messages
+
+# clean rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages.dir/clean
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/counter_node_generate_messages.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/all: counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/all
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  7
+	@echo "Built target counter_node_generate_messages_cpp"
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+counter_node_generate_messages_cpp: counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/rule
+.PHONY : counter_node_generate_messages_cpp
+
+# clean rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/clean
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/counter_node_generate_messages_cpp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/all: counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/all
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  8
+	@echo "Built target counter_node_generate_messages_lisp"
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+counter_node_generate_messages_lisp: counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/rule
+.PHONY : counter_node_generate_messages_lisp
+
+# clean rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/clean
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target counter_node/CMakeFiles/counter_node_generate_messages_py.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages_py.dir/all: chatbot_node/CMakeFiles/std_msgs_generate_messages_py.dir/all
+counter_node/CMakeFiles/counter_node_generate_messages_py.dir/all: counter_node/CMakeFiles/_counter_node_generate_messages_check_deps_counter.dir/all
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_py.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_py.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_py.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_py.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  9 10
+	@echo "Built target counter_node_generate_messages_py"
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/counter_node_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/counter_node_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_py.dir/rule
+
+# Convenience name for target.
+counter_node_generate_messages_py: counter_node/CMakeFiles/counter_node_generate_messages_py.dir/rule
+.PHONY : counter_node_generate_messages_py
+
+# clean rule for target.
+counter_node/CMakeFiles/counter_node_generate_messages_py.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_generate_messages_py.dir/build.make counter_node/CMakeFiles/counter_node_generate_messages_py.dir/clean
+.PHONY : counter_node/CMakeFiles/counter_node_generate_messages_py.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/counter_node_generate_messages_py.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target counter_node/CMakeFiles/counter_node_genlisp.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/counter_node_genlisp.dir/all: counter_node/CMakeFiles/counter_node_generate_messages_lisp.dir/all
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_genlisp.dir/build.make counter_node/CMakeFiles/counter_node_genlisp.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_genlisp.dir/build.make counter_node/CMakeFiles/counter_node_genlisp.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles 
+	@echo "Built target counter_node_genlisp"
+.PHONY : counter_node/CMakeFiles/counter_node_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/counter_node_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/counter_node_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/counter_node_genlisp.dir/rule
+
+# Convenience name for target.
+counter_node_genlisp: counter_node/CMakeFiles/counter_node_genlisp.dir/rule
+.PHONY : counter_node_genlisp
+
+# clean rule for target.
+counter_node/CMakeFiles/counter_node_genlisp.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_genlisp.dir/build.make counter_node/CMakeFiles/counter_node_genlisp.dir/clean
+.PHONY : counter_node/CMakeFiles/counter_node_genlisp.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/counter_node_genlisp.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target counter_node/CMakeFiles/counter_node_genpy.dir
+
+# All Build rule for target.
+counter_node/CMakeFiles/counter_node_genpy.dir/all: counter_node/CMakeFiles/counter_node_generate_messages_py.dir/all
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_genpy.dir/build.make counter_node/CMakeFiles/counter_node_genpy.dir/depend
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_genpy.dir/build.make counter_node/CMakeFiles/counter_node_genpy.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles 
+	@echo "Built target counter_node_genpy"
+.PHONY : counter_node/CMakeFiles/counter_node_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+counter_node/CMakeFiles/counter_node_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 counter_node/CMakeFiles/counter_node_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/okrengel/catkin_ws/build/CMakeFiles 0
+.PHONY : counter_node/CMakeFiles/counter_node_genpy.dir/rule
+
+# Convenience name for target.
+counter_node_genpy: counter_node/CMakeFiles/counter_node_genpy.dir/rule
+.PHONY : counter_node_genpy
+
+# clean rule for target.
+counter_node/CMakeFiles/counter_node_genpy.dir/clean:
+	$(MAKE) -f counter_node/CMakeFiles/counter_node_genpy.dir/build.make counter_node/CMakeFiles/counter_node_genpy.dir/clean
+.PHONY : counter_node/CMakeFiles/counter_node_genpy.dir/clean
+
+# clean rule for target.
+clean: counter_node/CMakeFiles/counter_node_genpy.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -1078,9 +1344,9 @@ clean: message_ui/CMakeFiles/message_ui_gencpp.dir/clean
 # Target rules for target message_ui/CMakeFiles/message_ui_generate_messages.dir
 
 # All Build rule for target.
+message_ui/CMakeFiles/message_ui_generate_messages.dir/all: message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/all
 message_ui/CMakeFiles/message_ui_generate_messages.dir/all: message_ui/CMakeFiles/message_ui_generate_messages_py.dir/all
 message_ui/CMakeFiles/message_ui_generate_messages.dir/all: message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/all
-message_ui/CMakeFiles/message_ui_generate_messages.dir/all: message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/all
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages.dir/depend
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles 
@@ -1119,7 +1385,7 @@ message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/all: chatbot_node/CMa
 message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/all: message_ui/CMakeFiles/_message_ui_generate_messages_check_deps_sent_msg.dir/all
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/depend
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  9
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  13
 	@echo "Built target message_ui_generate_messages_cpp"
 .PHONY : message_ui/CMakeFiles/message_ui_generate_messages_cpp.dir/all
 
@@ -1151,7 +1417,7 @@ message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/all: chatbot_node/CM
 message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/all: message_ui/CMakeFiles/_message_ui_generate_messages_check_deps_sent_msg.dir/all
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/depend
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  14
 	@echo "Built target message_ui_generate_messages_lisp"
 .PHONY : message_ui/CMakeFiles/message_ui_generate_messages_lisp.dir/all
 
@@ -1183,7 +1449,7 @@ message_ui/CMakeFiles/message_ui_generate_messages_py.dir/all: chatbot_node/CMak
 message_ui/CMakeFiles/message_ui_generate_messages_py.dir/all: message_ui/CMakeFiles/_message_ui_generate_messages_check_deps_sent_msg.dir/all
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages_py.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages_py.dir/depend
 	$(MAKE) -f message_ui/CMakeFiles/message_ui_generate_messages_py.dir/build.make message_ui/CMakeFiles/message_ui_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  11 12
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/okrengel/catkin_ws/build/CMakeFiles  15 16
 	@echo "Built target message_ui_generate_messages_py"
 .PHONY : message_ui/CMakeFiles/message_ui_generate_messages_py.dir/all
 

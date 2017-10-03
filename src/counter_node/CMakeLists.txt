@@ -7,6 +7,18 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
+## Generate messages in the 'srv' folder
+add_service_files(
+   FILES
+   counter.srv
+)
+
+## Generate added messages and services with any dependencies listed here
+generate_messages(
+   DEPENDENCIES
+   std_msgs
+)
+
 catkin_package(
   CATKIN_DEPENDS
 )
@@ -20,5 +32,5 @@ add_executable(counter_node src/counter_node.cpp)
 add_dependencies(counter_node ${catkin_EXPORTED_TARGETS})
 add_dependencies(counter_node message_ui_generate_messages_cpp)
 add_dependencies(counter_node chatbot_node_generate_messages_cpp)
-#add_dependencies(counter_node arithmetic_node_generate_messages_cpp)
+add_dependencies(counter_node arithmetic_node_generate_messages_cpp)
 target_link_libraries(counter_node ${catkin_LIBRARIES} )

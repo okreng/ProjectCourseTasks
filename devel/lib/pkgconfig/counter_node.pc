@@ -3,6 +3,6 @@ prefix=/home/okrengel/catkin_ws/devel
 Name: counter_node
 Description: Description of counter_node
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/okrengel/catkin_ws/devel/include
 Libs: -L/home/okrengel/catkin_ws/devel/lib 
 Requires: 
